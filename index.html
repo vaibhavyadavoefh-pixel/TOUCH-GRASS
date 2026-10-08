@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Grass Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        🌱 <span>Campus Grass</span>
+    </div>
+
+    <div class="header-right">
+        <div class="streak">🔥 <span id="streak">3</span> Day Streak</div>
+        <div class="avatar">V</div>
+    </div>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="tag">WEEK 01 · CAMPUS CHALLENGE</div>
+
+        <h1>
+            TOUCH<br>
+            <span>GRASS.</span>
+        </h1>
+
+        <p>
+            A simple campus challenge to spend less time on your screen
+            and more time actually living outside.
+        </p>
+
+        <div class="hero-stats">
+            <div>
+                <strong id="totalXP">420</strong>
+                <small>YOUR XP</small>
+            </div>
+
+            <div>
+                <strong id="completedCount">4/7</strong>
+                <small>TODAY</small>
+            </div>
+
+            <div>
+                <strong id="rank">#08</strong>
+                <small>CAMPUS RANK</small>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DAILY CHALLENGE -->
+    <section class="content-grid">
+
+        <div class="card challenge-card">
+
+            <div class="card-heading">
+                <div>
+                    <span class="small-label">TODAY'S MISSIONS</span>
+                    <h2>7 Campus Grass Challenges</h2>
+                </div>
+
+                <div class="progress">
+                    <span id="progressText">4 / 7</span>
+                    <div class="progress-bar">
+                        <div id="progressFill"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="challenge-list">
+
+                <label class="challenge completed">
+                    <input type="checkbox" checked>
+                    <span class="check"></span>
+                    <div>
+                        <strong>Walk outside for 15 minutes</strong>
+                        <small>+50 XP</small>
+                    </div>
+                </label>
+
+                <label class="challenge completed">
+                    <input type="checkbox" checked>
+                    <span class="check"></span>
+                    <div>
+                        <strong>Eat one meal without your phone</strong>
+                        <small>+50 XP</small>
+                    </div>
+                </label>
+
+                <label class="challenge completed">
+                    <input type="checkbox" checked>
+                    <span class="check"></span>
+                    <div>
+                        <strong>Talk to someone face-to-face</strong>
+                        <small>+75 XP</small>
+                    </div>
+                </label>
+
+                <label class="challenge completed">
+                    <input type="checkbox" checked>
+                    <span class="check"></span>
+                    <div>
+                        <strong>Spend 20 minutes in an open area</strong>
+                        <small>+50 XP</small>
+                    </div>
+                </label>
+
+                <label class="challenge">
+                    <input type="checkbox">
+                    <span class="check"></span>
+                    <div>
+                        <strong>Take a different route to class</strong>
+                        <small>+50 XP</small>
+                    </div>
+                </label>
+
+                <label class="challenge">
+                    <input type="checkbox">
+                    <span class="check"></span>
+                    <div>
+                        <strong>Find something you've never noticed</strong>
+                        <small>+75 XP</small>
+                    </div>
+                </label>
+
+                <label class="challenge">
+                    <input type="checkbox">
+                    <span class="check"></span>
+                    <div>
+                        <strong>30 minutes completely screen-free</strong>
+                        <small>+100 XP</small>
+                    </div>
+                </label>
+
+            </div>
+
+            <button class="complete-btn" id="completeBtn">
+                COMPLETE DAY →
+            </button>
+
+        </div>
+
+
+        <!-- SCREEN TIME -->
+        <div class="card screen-card">
+
+            <span class="small-label">HONEST LOG</span>
+
+            <h2>How much screen time?</h2>
+
+            <p class="muted">
+                Your browser can't read your phone's screen time.
+                Log it yourself — honesty is part of the challenge.
+            </p>
+
+            <div class="screen-input">
+                <input
+                    type="number"
+                    id="screenHours"
+                    min="0"
+                    max="24"
+                    placeholder="4.5"
+                >
+
+                <span>hours</span>
+            </div>
+
+            <button class="log-btn" id="logBtn">
+                LOG SCREEN TIME
+            </button>
+
+            <div class="screen-result" id="screenResult">
+                <span>TODAY'S LOG</span>
+                <strong>—</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LEADERBOARD -->
+    <section class="leaderboard card">
+
+        <div class="leader-head">
+            <div>
+                <span class="small-label">CAMPUS</span>
+                <h2>Grass Leaderboard</h2>
+            </div>
+
+            <span class="live">● LIVE</span>
+        </div>
+
+        <div class="players">
+
+            <div class="player">
+                <span class="position">01</span>
+                <div class="player-avatar">A</div>
+                <div class="player-name">
+                    <strong>Aarav</strong>
+                    <small>🔥 12 day streak</small>
+                </div>
+                <strong class="player-xp">980 XP</strong>
+            </div>
+
+            <div class="player">
+                <span class="position">02</span>
+                <div class="player-avatar">R</div>
+                <div class="player-name">
+                    <strong>Riya</strong>
+                    <small>🔥 10 day streak</small>
+                </div>
+                <strong class="player-xp">910 XP</strong>
+            </div>
+
+            <div class="player">
+                <span class="position">03</span>
+                <div class="player-avatar">K</div>
+                <div class="player-name">
+                    <strong>Kunal</strong>
+                    <small>🔥 8 day streak</small>
+                </div>
+                <strong class="player-xp">850 XP</strong>
+            </div>
+
+            <div class="player you">
+                <span class="position">08</span>
+                <div class="player-avatar">V</div>
+                <div class="player-name">
+                    <strong>You</strong>
+                    <small>🔥 3 day streak</small>
+                </div>
+                <strong class="player-xp" id="leaderXP">420 XP</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PHILOSOPHY -->
+    <section class="quote">
+        <span>THE RULE</span>
+
+        <h2>
+            The goal isn't to use<br>
+            this app more.
+        </h2>
+
+        <p>
+            Complete the challenge, close the app,<br>
+            and go touch some grass.
+        </p>
+    </section>
+
+</main>
+
+
+<div class="toast" id="toast">
+    🌱 Challenge completed! +XP
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
